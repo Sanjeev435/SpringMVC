@@ -1,6 +1,5 @@
 package com.spring.csvfactory;
 
-import java.awt.datatransfer.StringSelection;
 import java.io.IOException;
 
 import org.apache.commons.lang3.StringUtils;
@@ -11,13 +10,11 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.context.support.AnnotationConfigContextLoader;
 
-import com.spring.config.AppConfig;
-import com.spring.config.AppInitializer;
 import com.spring.model.Login;
 import com.spring.model.User;
 import com.spring.test.config.AppConfigForTest;
-import org.springframework.test.context.support.AnnotationConfigContextLoader;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = AppConfigForTest.class, loader = AnnotationConfigContextLoader.class)

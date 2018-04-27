@@ -21,7 +21,7 @@ import org.springframework.util.CollectionUtils;
 import com.spring.model.Login;
 import com.spring.model.User;
 
-@Service
+@Service("csvFactory")
 public class CsvFactoryImpl implements CsvFactory {
 
 	private static Logger LOG = Logger.getLogger(CsvFactoryImpl.class);

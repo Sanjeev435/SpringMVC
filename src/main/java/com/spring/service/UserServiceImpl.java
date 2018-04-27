@@ -8,7 +8,7 @@ import com.spring.csvfactory.CsvFactory;
 import com.spring.model.Login;
 import com.spring.model.User;
 
-@Service
+@Service("userService")
 public class UserServiceImpl implements UserService {
 	private static Logger LOG = Logger.getLogger(UserServiceImpl.class);
 
